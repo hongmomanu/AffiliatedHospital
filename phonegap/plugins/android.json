@@ -1,0 +1,26 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"InstallApkPlugin\"><param name=\"android-package\" value=\"com.fourleaf.phonegap.plugin.installapk.InstallApkPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.fourleaf.phonegap.plugin.installApkPlugin": {
+            "PACKAGE_NAME": "com.mycompany.AffiliatedHospital"
+        }
+    },
+    "dependent_plugins": {}
+}
