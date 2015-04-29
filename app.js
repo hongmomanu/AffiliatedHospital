@@ -17,8 +17,10 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: [
+    controllers: [
+
         'Main'
+
     ],
 
     icon: {

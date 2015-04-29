@@ -36,6 +36,7 @@ Ext.Loader.addClassPathMappings({
 });
 
 Ext.ClassManager.addNameAlternateMappings({
+  "AffiliatedHospital.controller.Main": [],
   "AffiliatedHospital.view.Main": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
@@ -660,6 +661,7 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 
 Ext.ClassManager.addNameAliasMappings({
+  "AffiliatedHospital.controller.Main": [],
   "AffiliatedHospital.view.Main": [
     "widget.main"
   ],
