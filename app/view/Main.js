@@ -14,12 +14,8 @@ Ext.define('AffiliatedHospital.view.Main', {
             {
                 title: '首页',
                 iconCls: 'home',
-
                 //styleHtmlContent: true,
                 scrollable: true,
-
-
-
                 html:  '<div><iframe style="width:100%;height:100%;" src="http://wap.0575fy.com/">Your device does not support iframes.</iframe></div>'
             },
             {

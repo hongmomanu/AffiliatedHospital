@@ -38,7 +38,7 @@ Ext.define('AffiliatedHospital.controller.Main', {
         var me=this;
         setTimeout(function(){
             me.getNav().setActiveItem(0);
-        },100)
+        },100);
 
     }
 
