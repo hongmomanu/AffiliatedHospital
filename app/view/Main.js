@@ -41,54 +41,13 @@ Ext.define('AffiliatedHospital.view.Main', {
                     {
                         xtype: 'button',
                         padding:20,
-                        handler:function(){
-
-                            if(device.platform==='Android'){
-
-                                //var loadmask=new Ext.LoadMask(Ext.getBody(), {msg:"下载中..."});
-                                //loadmask.show();
-                                Ext.Viewport.mask({ xtype: 'loadmask',
-                                    message: "下载中..." });
-                                var onSuccess = function(data) {
-                                    //loadmask.hide();
-                                    Ext.Viewport.unmask();
-                                };
-
-                                function onError(error) {
-                                    //loadmask.hide();
-                                    Ext.Viewport.unmask();
-                                    Ext.Msg.alert("失败","程序下载失败");
-                                }
-                                window.cordova.plugins.FileOpener.openFile(Globle_Variable.serverurl+"download/doctor.apk",onSuccess, onError);
-
-                            }
-
-                        },
+                        itemId:'installdoctor',
                         text:'e医通医生app下载'
                     },{
                         xtype: 'button',
                         padding:20,
-                        handler:function(){
+                        itemId:'installpatient',
 
-                            if(device.platform==='Android'){
-
-                                Ext.Viewport.mask({ xtype: 'loadmask',
-                                    message: "下载中..." });
-                                var onSuccess = function(data) {
-                                    //loadmask.hide();
-                                    Ext.Viewport.unmask();
-                                };
-
-                                function onError(error) {
-                                    //loadmask.hide();
-                                    Ext.Viewport.unmask();
-                                    Ext.Msg.alert("失败","程序下载失败");
-                                }
-                                window.cordova.plugins.FileOpener.openFile(Globle_Variable.serverurl+"download/patient.apk",onSuccess, onError);
-
-                            }
-
-                        },
                         text:'e医通患者app下载'
                     }
                 ]
