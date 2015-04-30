@@ -29,16 +29,33 @@ Ext.define('AffiliatedHospital.controller.Main', {
         },
         refs: {
 
-            nav: 'main'
+            nav: 'main',
+            homepage:'main #homepage'
         }
     },
 
+    orientationChange:function(){
+        Ext.Msg.alert("changed");
 
+    },
     initRender: function () {
-        var me=this;
+       /* var me=this;
+        testobj=me.getNav();
         setTimeout(function(){
             me.getNav().setActiveItem(0);
-        },100);
+        },500);*/
+        setTimeout(function(){
+            Ext.get('homepage').setHeight((Ext.getBody().getHeight()-50));
+
+        },500);
+
+
+        Ext.Viewport.on('orientationchange', function(){
+            Ext.get('homepage').setHeight((Ext.getBody().getHeight()-50));
+
+        }, this, {buffer: 50 });
+
+
 
     }
 
